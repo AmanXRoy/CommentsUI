@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+:root {
+  --ModerateBlur: hsl(238, 40%, 52%);
+  --softRed: hsl(358, 79%, 66%);
+  --lightGrayishBlue: hsl(239, 57%, 85%);
+  --paleRed: hsl(357, 100%, 86%);
+  --darkBlue: hsl(212, 24%, 26%);
+  --GrayishBlue: hsl(211, 10%, 45%);
+  --Lightgray: hsl(223, 19%, 93%);
+  --verylightgray: hsl(228, 33%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--verylightgray) !important;
+  font-family: "Rubik", sans-serif !important;
+  height: 100vh;
+  overflow: hidden;
+}
+
+textarea {
+  resize: none !important;
+  background-color: transparent !important;
+}
+
+textarea:focus {
+  box-shadow: none !important;
+  border-color: var(--ModerateBlur) !important;
+}
+.replyWrapper .addCommentCard .userProfileImg {
+  flex: 0 0 40px;
+}
+
+.replyWrapper .addCommentCard .commentControl {
+  flex: 1 0 auto;
+}
+
+.replyWrapper .addCommentCard .ctaWrapper {
+  flex: 0 0 100px;
+}
+
+.replyWrapper .addCommentCard .send-cta {
+  background-color: var(--ModerateBlur) !important;
+  border-color: var(--ModerateBlur) !important;
+  padding: 12px 30px !important;
+}
+
+.replyWrapper .replyCard .scoreCounter {
+  border-radius: 10px;
+  background-color: var(--verylightgray);
+  max-height: 100px;
+}
+
+.replyWrapper .replyCard .scoreCounter button {
+  color: var(--lightGrayishBlue);
+  border: none;
+}
+
+.replyWrapper .replyCard .scoreCounter button:active {
+  color: var(--ModerateBlur);
+}
+
+.replyWrapper .replyCard .scoreCounter .score {
+  color: var(--ModerateBlur);
+  font-weight: 600;
+}
+.replyWrapper .replyCard .userInfoWrapper .userInfo .userProfileImg {
+  flex: 0 0 32px;
+}
+
+.replyWrapper .replyCard .userInfoWrapper .userInfo .userName {
+  font-weight: 600;
+}
+
+.replyWrapper .replyCard .userInfoWrapper .userInfo .commentDate,
+.replyWrapper .replyCard .userInfoWrapper .userComment {
+  color: var(--GrayishBlue);
+}
+
+.replyWrapper .replyCard .reply-cta {
+  color: var(--ModerateBlur);
+  font-weight: 500;
+  right: 24px;
+  border: none;
+}
+
+.replyWrapper .replyCard .reply-cta:hover {
+  color: var(--lightGrayishBlue);
+}
+
+.replyWrapper .replyCard .reply-cta img {
+  margin-right: 6px;
+}
+
+
+
+
+@media (max-width: 576px) {
+  .replyWrapper .addCommentCard .userProfileImg {
+    flex: 0 0 32px;
+  }
+
+  .replyWrapper .addCommentCard .commentControl {
+    flex: 1 0 100%;
+  }
+}
